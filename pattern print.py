@@ -92,9 +92,9 @@ for i in range(1,5):                 # D
         print(chr(69-j), end=" ")    # D C B
     print()                          # D C B A
  
-ch=65 
-for i in range (1,5):
-    for j in range(1,i+1):
-        print(chr(ch), end = " ")
-        ch+=1
+ch=65                                # pattern
+for i in range (1,5):                # A
+    for j in range(1,i+1):           # B C
+        print(chr(ch), end = "")    # D E F
+        ch+=1                        # G H I J
     print()       
