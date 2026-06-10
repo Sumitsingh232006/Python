@@ -95,6 +95,29 @@ for i in range(1,5):                 # D
 ch=65                                # pattern
 for i in range (1,5):                # A
     for j in range(1,i+1):           # B C
-        print(chr(ch), end = "")    # D E F
+        print(chr(ch), end = " ")    # D E F
         ch+=1                        # G H I J
     print()       
+    
+for i in range(1,5):                #pattern
+    for j in range(1,5-i):          #   *
+        print(" ",end="")           #  **
+    for k in range(1,i+1):          # ***
+        print("*", end="")          #****
+    print()    
+    
+for i in range (1,4):
+    for j in range(4-i,3):    #pattern
+        print(" ",end="")     #***
+    for k in range(1,5-i):    # **
+        print("*", end = "")  #  *
+    print()                    
+    
+for i in range (1,5):
+    for j in range(i,1,-1):    #pattern
+        print(" ",end="")      #****
+    for k in range(5-i):       # ***
+        print("A", end = "")   #  **
+    print()                    #   *
+    
+f    
