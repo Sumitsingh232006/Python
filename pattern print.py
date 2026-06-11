@@ -46,7 +46,7 @@ for i in range(1,5):           #pattern
         print(j, end=" ")      # 2 1
     print()                    # 3 2 1
                                # 4 3 2 1
-"""
+
 num = 1                         # pattern
 for i in range(1,5):            # 1
     for j in range(1,i+1):      # 2 3
@@ -117,7 +117,52 @@ for i in range (1,5):
     for j in range(i,1,-1):    #pattern
         print(" ",end="")      #****
     for k in range(5-i):       # ***
-        print("A", end = "")   #  **
+        print("*", end = "")   #  **
     print()                    #   *
     
-f    
+ch = 65                          
+for i in range(1,5):               #pattern
+    for j in range (i,1,-1):       #ABCD
+        print(" ",end="")          # EFG
+    for k in range (1,6-i):        #  HI
+        print(chr(ch),end="")      #   J
+        ch+=1
+    print() """
+    
+for i in range(1,5):             #pattern
+    for j in range(4-i):         #   *   
+        print(" ",end="")        #  ***
+    for k in range(2*i-1):       # *****
+        print("*",end="")        #*******
+    print()    
+            
+for i in range(1,5):              #pattern
+    for j in range(i-1):          #*******
+        print(" ", end="")        # *****
+    for k in range (7-2*(i-1)):   #  ***
+        print("*",end="")         #   *
+    print()    
+
+ch = 64    
+for i in range(1,5):                #pattern
+    for j in range(4-i):            #   A
+        print(" ",end="")           #  BBB
+    for k in range(1+2*(i-1)):      # CCCCC
+        print(chr(ch+i), end="")    #DDDDDDD
+    print()            
+ 
+ch=64                             #pattern
+for i in range(1,5):              #   A
+    for j in range(4-i):          #  ABC
+        print(" ", end="")        # ABCDE
+    for k in range(1+2*(i-1)):    #ABCDEFG
+        print(chr(ch+k+1), end="")
+    print()    
+                   
+ch = 64                           #Pattern
+for i in range(1,5):              #   A
+    for j in range(4-i):          #  BCD
+        print(" ", end="")        # CDEFG
+    for k in range(2*i-1):        #DEFGHIJ
+        print(chr(ch+i+k), end="")
+    print()                   
