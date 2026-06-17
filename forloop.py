@@ -83,17 +83,3 @@ if (count==2):
     print("prime")
 else: print("not prime") '''   
             
-#palindrome
-n = int(input("enter  n"))
-p=n
-sum=0 
-for i in range(n+1>0):
-#while(n>0):
-    d=n%10
-    sum=sum*10+d
-    n=n//10
-if(sum==p):
-    print("palindrome")
-else:
-    print("not palindrome")          
-

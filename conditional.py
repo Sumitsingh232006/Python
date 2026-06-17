@@ -54,7 +54,26 @@ else:
 n=int(input("enter the number"))
 if(n>0):
     if(n%2==0):
-        print("positive number")
+        print("positive even number")
+    if(n%2!=0):print("positive odd number")
+        
 elif(n<0):print("negative number")
-else(n==0): print("zero number")            
+else: print("zero number")            
     
+age=int(input("enter age"))
+marks=int(input("enter marks"))
+if(age>=18):
+    if(marks>=50):
+        print("eligible")
+    else:print("Not eligible due to low marks")
+elif(age<18):
+    print("not eligible due to age")            
+    
+    #LEAP YEAR
+year=int(input("enter year"))
+if(year%4==0 and year%100!=0 ) or ( year%400==0):
+    print(year,"is leap year")
+else:
+    print(year,"is not leap year")
+                
+        

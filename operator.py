@@ -1,5 +1,4 @@
 #ARITHMETIC OPERATOR
-'''
 print(15/3)  #/ gives float value
 print(15%4)
 print(3**2)
@@ -11,7 +10,7 @@ print(4>1 or 5<3)    # for or only one statement must be true
 print(not False)     # reverse the given'''
 
 #MEMBERSHIP OPERATOR
-"""name=("python")
+name=("python")
 print("p" in name)
 name = ("singh")
 print("g" not in name)
@@ -38,7 +37,7 @@ print(a,b)
 a = 10
 b = 20
 a,b = b,a  # pyhton shortcut for swapping
-print(a,b)"""
+print(a,b)
 
 #SIMPLE CALCULATOR
 
@@ -74,3 +73,4 @@ match operator:
         print("Division =", num1 / num2)
     case _:
         print("Error: Invalid Operator selected!")
+        #PRACTISE THIS 

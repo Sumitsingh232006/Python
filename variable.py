@@ -20,6 +20,10 @@ city=input("Enter yourcity: ")
 print("hello",name)
 print("you live in",city)'''
 
-''' DATA TYPE'''
+                               #DATA TYPE
 clas="stro"
 print(type(clas))
+                               # COMMENTS
+"""......AND"""  '''both can be used as multiline comment'''
+# can be used as single line comment
+                             

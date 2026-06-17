@@ -128,7 +128,7 @@ for i in range(1,5):               #pattern
         print(chr(ch),end="")      #   J
         ch+=1
     print() """
-    
+""" 
 for i in range(1,5):             #pattern
     for j in range(4-i):         #   *   
         print(" ",end="")        #  ***
@@ -165,4 +165,22 @@ for i in range(1,5):              #   A
         print(" ", end="")        # CDEFG
     for k in range(2*i-1):        #DEFGHIJ
         print(chr(ch+i+k), end="")
-    print()                   
+    print()  
+ 
+  
+for i in range (1,5):
+    for j in range(4-i):
+        print(" ",end="")
+    for k in range(1,i+1):
+        print(k, end="")
+    for k in range(i-1,0,-1):
+        print(k,end="")    
+    print()   
+    """
+for i in range(1,6):
+    for j in range(5-i):
+        print(" ",end="")
+    for k in range(1,i+1):
+        print("*",end="")
+    print()
+    
