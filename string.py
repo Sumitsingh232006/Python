@@ -1,4 +1,5 @@
-#Data Type
+#Data Type   
+"""
 city="Agra"
 print(type(city))
 
@@ -149,5 +150,21 @@ if "@" in email and "." in email:
     print("email id is valid")
 else:
     print("email id is invalid")  
-    
+"""
         
+password=input("enter password")
+print(password)        
+if (len(password)<5):
+    print("atleast 5 alphanumeric character is required")
+else:
+    alnum=0
+    for ch in password:
+        if ch.isalnum():
+            alnum+=1
+    if (alnum==len(password)):
+        print("you entered correct password")
+    else: print("you enter wrong password")    
+                
+            
+           
+    

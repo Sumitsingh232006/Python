@@ -166,21 +166,58 @@ for i in range(1,5):              #   A
     for k in range(2*i-1):        #DEFGHIJ
         print(chr(ch+i+k), end="")
     print()  
- 
-  
-for i in range (1,5):
-    for j in range(4-i):
-        print(" ",end="")
-    for k in range(1,i+1):
-        print(k, end="")
-    for k in range(i-1,0,-1):
-        print(k,end="")    
-    print()   
-    """
-for i in range(1,6):
-    for j in range(5-i):
-        print(" ",end="")
-    for k in range(1,i+1):
-        print("*",end="")
+ """
+
+for i in range(1,5):            #pattern
+    for j in range(4-i):        #   1
+        print(" ",end="")       #  121
+    for k in range(1,i+1):      # 12321
+        print((k),end="")       #1234321
+    for l in range(i-1,0,-1):
+        print(l,end="")
     print()
     
+ch=64   
+for i in range(1,5):                    #pattern
+    for j in range(4-i):                #   A
+        print(" ",end="")               #  ABA
+    for k in range(1,i+1):              # ABCBA
+        print(chr(ch+k),end="")         #ABCDCBA
+    for l in range (i-1,0,-1):
+        print(chr(l+ch),end="")
+    print()    
+    
+"""   
+for i in range(1,5):
+    for j in range (4-i):
+        print(" ",end="")
+    for k in range(i,i+(i-1)+1):
+        print(k,end="")
+    print()         """                   
+for i in range (1,6):                      #pattern
+    for j in range(5-i):                   #    *
+        print(" ",end="")                  #   ***
+    for k in range(1+(i-1)*2 ):            #  *****
+        print("*",end="")                  # *******
+    print()                                #*********
+for l in range(1,5):                       # *******
+    for m in range(1,l+1):                 #  *****
+        print(" ",end="")                  #   ***
+    for n in range(7-(l-1)*2):             #    *
+        print("*",end="")             
+    print()
+
+
+for i in range (1,6):                  #pattern
+    for j in range(10-i*(2)):          #        *
+        print(" ",end="")              #      ***
+    for k in range(1+(i-1)*2):         #    *****
+        print("*",end="")              #  *******
+    print()                            #*********
+for l in range (1,5):                  #  *******
+    for m in range (l*2):              #    *****
+        print(" ",end="")              #      ***
+    for n in range (7-(l-1)*2):        #        *
+        print("*",end="")
+    print()    
+                
